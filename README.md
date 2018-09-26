@@ -4,7 +4,7 @@
 Nearly all MobX samples recommand “transform-decorators-legacy” babel plug-in for supporting the decorator grammar. It works with next@6. When upgrading to Next@7, the babel plug-in “transform-decorators-legacy” is not available anymore. We have to look for the new plug-in(s) for the decorator grammer. So here is the sample.
 
 ## The key point
-The key point is in the .bablerc file. We have to use two plug-in(s) with the right arguments. And the order of the two plug-in(s) cannot be changed.
+The key point is in the .bablerc file. We have to use the two plug-in(s) below with the right arguments. And the order of the two plug-in(s) cannot be changed.
 
 ```javascript
 // .babelrc
