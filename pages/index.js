@@ -31,10 +31,8 @@ class TestMobX extends Component {
   }
 }
 
-const Index = () => (
+export default () => (
   <Provider store={store}>
     <TestMobX />
   </Provider>
 );
-
-export default Index;
