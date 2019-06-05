@@ -30,7 +30,7 @@ class TestMobX extends Component {
     return (
       <div>
         <button type="button" onClick={this.onclick}>Click Me!</button>
-        <p>{this.props.store.getShow && 'Hello Next.js@7 with MobX.'}</p>
+        <p>{this.props.store.getShow && 'Hello Next.js@8+ with MobX.'}</p>
       </div>
     )
   }
