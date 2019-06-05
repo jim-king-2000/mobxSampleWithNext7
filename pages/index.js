@@ -16,12 +16,7 @@ const store = new Store();
 @inject('store')
 @observer
 class TestMobX extends Component {
-  constructor() {
-    super();
-    this.onclick = this.onclick.bind(this);
-  }
-
-  onclick() {
+  onclick = () => {
     console.log('onclick');
     this.props.store.toggleShow();
   }
@@ -29,8 +24,8 @@ class TestMobX extends Component {
   render() {
     return (
       <div>
-        <button type="button" onClick={this.onclick}>Click Me!</button>
-        <p>{this.props.store.getShow && 'Hello Next.js@8+ with MobX.'}</p>
+        <button type='button' onClick={this.onclick}>Click Me!</button>
+        {this.props.store.getShow && <p>Hello Next.js@8+ with MobX.</p>}
       </div>
     )
   }
