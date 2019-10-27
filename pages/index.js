@@ -24,7 +24,7 @@ class TestMobX extends Component {
   render() {
     return (
       <div>
-        <button type='button' onClick={this.onclick}>Click Me!</button>
+        <button onClick={this.onclick}>Click Me!</button>
         {this.props.store.getShow && <p>Hello Next.js@8+ with MobX.</p>}
       </div>
     )
